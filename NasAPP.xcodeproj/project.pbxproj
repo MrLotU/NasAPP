@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0811796D1F8B654800A44D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811796C1F8B654800A44D9B /* AppDelegate.swift */; };
+		0811796F1F8B654800A44D9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811796E1F8B654800A44D9B /* ViewController.swift */; };
+		081179721F8B654800A44D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179701F8B654800A44D9B /* Main.storyboard */; };
+		081179741F8B654800A44D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081179731F8B654800A44D9B /* Assets.xcassets */; };
+		081179771F8B654800A44D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179751F8B654800A44D9B /* LaunchScreen.storyboard */; };
+		081179821F8B654800A44D9B /* NasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179811F8B654800A44D9B /* NasAPPTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0811797E1F8B654800A44D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081179611F8B654800A44D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081179681F8B654800A44D9B;
+			remoteInfo = NasAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081179691F8B654800A44D9B /* NasAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0811796C1F8B654800A44D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0811796E1F8B654800A44D9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		081179711F8B654800A44D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		081179731F8B654800A44D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081179761F8B654800A44D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081179781F8B654800A44D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0811797D1F8B654800A44D9B /* NasAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		081179811F8B654800A44D9B /* NasAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasAPPTests.swift; sourceTree = "<group>"; };
+		081179831F8B654800A44D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081179661F8B654800A44D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0811797A1F8B654800A44D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081179601F8B654800A44D9B = {
+			isa = PBXGroup;
+			children = (
+				0811796B1F8B654800A44D9B /* NasAPP */,
+				081179801F8B654800A44D9B /* NasAPPTests */,
+				0811796A1F8B654800A44D9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0811796A1F8B654800A44D9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081179691F8B654800A44D9B /* NasAPP.app */,
+				0811797D1F8B654800A44D9B /* NasAPPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0811796B1F8B654800A44D9B /* NasAPP */ = {
+			isa = PBXGroup;
+			children = (
+				0811796C1F8B654800A44D9B /* AppDelegate.swift */,
+				0811796E1F8B654800A44D9B /* ViewController.swift */,
+				081179701F8B654800A44D9B /* Main.storyboard */,
+				081179731F8B654800A44D9B /* Assets.xcassets */,
+				081179751F8B654800A44D9B /* LaunchScreen.storyboard */,
+				081179781F8B654800A44D9B /* Info.plist */,
+			);
+			path = NasAPP;
+			sourceTree = "<group>";
+		};
+		081179801F8B654800A44D9B /* NasAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				081179811F8B654800A44D9B /* NasAPPTests.swift */,
+				081179831F8B654800A44D9B /* Info.plist */,
+			);
+			path = NasAPPTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		081179681F8B654800A44D9B /* NasAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081179861F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPP" */;
+			buildPhases = (
+				081179651F8B654800A44D9B /* Sources */,
+				081179661F8B654800A44D9B /* Frameworks */,
+				081179671F8B654800A44D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasAPP;
+			productName = NasAPP;
+			productReference = 081179691F8B654800A44D9B /* NasAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0811797C1F8B654800A44D9B /* NasAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081179891F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPPTests" */;
+			buildPhases = (
+				081179791F8B654800A44D9B /* Sources */,
+				0811797A1F8B654800A44D9B /* Frameworks */,
+				0811797B1F8B654800A44D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0811797F1F8B654800A44D9B /* PBXTargetDependency */,
+			);
+			name = NasAPPTests;
+			productName = NasAPPTests;
+			productReference = 0811797D1F8B654800A44D9B /* NasAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081179611F8B654800A44D9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = JarICT;
+				TargetAttributes = {
+					081179681F8B654800A44D9B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					0811797C1F8B654800A44D9B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 081179681F8B654800A44D9B;
+					};
+				};
+			};
+			buildConfigurationList = 081179641F8B654800A44D9B /* Build configuration list for PBXProject "NasAPP" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 081179601F8B654800A44D9B;
+			productRefGroup = 0811796A1F8B654800A44D9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				081179681F8B654800A44D9B /* NasAPP */,
+				0811797C1F8B654800A44D9B /* NasAPPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		081179671F8B654800A44D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081179771F8B654800A44D9B /* LaunchScreen.storyboard in Resources */,
+				081179741F8B654800A44D9B /* Assets.xcassets in Resources */,
+				081179721F8B654800A44D9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0811797B1F8B654800A44D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081179651F8B654800A44D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0811796F1F8B654800A44D9B /* ViewController.swift in Sources */,
+				0811796D1F8B654800A44D9B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081179791F8B654800A44D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081179821F8B654800A44D9B /* NasAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0811797F1F8B654800A44D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081179681F8B654800A44D9B /* NasAPP */;
+			targetProxy = 0811797E1F8B654800A44D9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		081179701F8B654800A44D9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081179711F8B654800A44D9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		081179751F8B654800A44D9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081179761F8B654800A44D9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		081179841F8B654800A44D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		081179851F8B654800A44D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		081179871F8B654800A44D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH45DPWU9R;
+				INFOPLIST_FILE = NasAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.jarict.NasAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		081179881F8B654800A44D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH45DPWU9R;
+				INFOPLIST_FILE = NasAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.jarict.NasAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0811798A1F8B654800A44D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH45DPWU9R;
+				INFOPLIST_FILE = NasAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.jarict.NasAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasAPP.app/NasAPP";
+			};
+			name = Debug;
+		};
+		0811798B1F8B654800A44D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH45DPWU9R;
+				INFOPLIST_FILE = NasAPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.jarict.NasAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasAPP.app/NasAPP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081179641F8B654800A44D9B /* Build configuration list for PBXProject "NasAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081179841F8B654800A44D9B /* Debug */,
+				081179851F8B654800A44D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081179861F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081179871F8B654800A44D9B /* Debug */,
+				081179881F8B654800A44D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081179891F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0811798A1F8B654800A44D9B /* Debug */,
+				0811798B1F8B654800A44D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081179611F8B654800A44D9B /* Project object */;
+}
