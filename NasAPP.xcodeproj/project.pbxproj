@@ -13,6 +13,8 @@
 		081179741F8B654800A44D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081179731F8B654800A44D9B /* Assets.xcassets */; };
 		081179771F8B654800A44D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081179751F8B654800A44D9B /* LaunchScreen.storyboard */; };
 		081179821F8B654800A44D9B /* NasAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081179811F8B654800A44D9B /* NasAPPTests.swift */; };
+		6D61D9E119F29C3677006760 /* Pods_NasAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CD250DE2EB805314991EAA /* Pods_NasAPPTests.framework */; };
+		87F83AE60E84CD9AE7A76BB1 /* Pods_NasAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4016CA213BC70AEA014515 /* Pods_NasAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		0811797D1F8B654800A44D9B /* NasAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081179811F8B654800A44D9B /* NasAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasAPPTests.swift; sourceTree = "<group>"; };
 		081179831F8B654800A44D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F497A9DA79154FAA925377A /* Pods-NasAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		336A9BCB6CAFB287E74EBE88 /* Pods-NasAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPPTests/Pods-NasAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4016CA213BC70AEA014515 /* Pods_NasAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8997B4960A7939A8528284 /* Pods-NasAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP.release.xcconfig"; sourceTree = "<group>"; };
+		E8E6462ACFE1E579F95D3D89 /* Pods-NasAPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPPTests/Pods-NasAPPTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8CD250DE2EB805314991EAA /* Pods_NasAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasAPPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F83AE60E84CD9AE7A76BB1 /* Pods_NasAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D61D9E119F29C3677006760 /* Pods_NasAPPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				0811796B1F8B654800A44D9B /* NasAPP */,
 				081179801F8B654800A44D9B /* NasAPPTests */,
 				0811796A1F8B654800A44D9B /* Products */,
+				96503637C7F0AF17DA3DFF6A /* Pods */,
+				6824DCBC9EE20E1B252C16DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = NasAPPTests;
 			sourceTree = "<group>";
 		};
+		6824DCBC9EE20E1B252C16DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F4016CA213BC70AEA014515 /* Pods_NasAPP.framework */,
+				F8CD250DE2EB805314991EAA /* Pods_NasAPPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96503637C7F0AF17DA3DFF6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F497A9DA79154FAA925377A /* Pods-NasAPP.debug.xcconfig */,
+				BD8997B4960A7939A8528284 /* Pods-NasAPP.release.xcconfig */,
+				336A9BCB6CAFB287E74EBE88 /* Pods-NasAPPTests.debug.xcconfig */,
+				E8E6462ACFE1E579F95D3D89 /* Pods-NasAPPTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081179861F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPP" */;
 			buildPhases = (
+				29F26818898C394D581B9B8B /* [CP] Check Pods Manifest.lock */,
 				081179651F8B654800A44D9B /* Sources */,
 				081179661F8B654800A44D9B /* Frameworks */,
 				081179671F8B654800A44D9B /* Resources */,
+				F033B46E065D779871F402DF /* [CP] Embed Pods Frameworks */,
+				515108342F35299CC84E0EB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081179891F8B654800A44D9B /* Build configuration list for PBXNativeTarget "NasAPPTests" */;
 			buildPhases = (
+				0787B6E36BE4B11F1F183A3A /* [CP] Check Pods Manifest.lock */,
 				081179791F8B654800A44D9B /* Sources */,
 				0811797A1F8B654800A44D9B /* Frameworks */,
 				0811797B1F8B654800A44D9B /* Resources */,
+				2237393D4ADE2B8B7EE604C6 /* [CP] Embed Pods Frameworks */,
+				23174B36ADA034CE08A741A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,112 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0787B6E36BE4B11F1F183A3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasAPPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2237393D4ADE2B8B7EE604C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasAPPTests/Pods-NasAPPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23174B36ADA034CE08A741A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasAPPTests/Pods-NasAPPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29F26818898C394D581B9B8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		515108342F35299CC84E0EB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F033B46E065D779871F402DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		081179651F8B654800A44D9B /* Sources */ = {
@@ -351,6 +495,7 @@
 		};
 		081179871F8B654800A44D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F497A9DA79154FAA925377A /* Pods-NasAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +511,7 @@
 		};
 		081179881F8B654800A44D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8997B4960A7939A8528284 /* Pods-NasAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +527,7 @@
 		};
 		0811798A1F8B654800A44D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336A9BCB6CAFB287E74EBE88 /* Pods-NasAPPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +545,7 @@
 		};
 		0811798B1F8B654800A44D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E6462ACFE1E579F95D3D89 /* Pods-NasAPPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
