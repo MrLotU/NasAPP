@@ -9,19 +9,77 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NasAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="NasAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-op-gET">
+                                <rect key="frame" x="46" y="143" width="676" height="851"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqJ-fQ-74b">
+                                        <rect key="frame" x="0.0" y="0.0" width="676" height="283.5"/>
+                                        <state key="normal" image="RoverCardButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mc-28-cpt">
+                                        <rect key="frame" x="0.0" y="283.5" width="676" height="284"/>
+                                        <state key="normal" image="EyeInSkyButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-gl-iby">
+                                        <rect key="frame" x="0.0" y="567.5" width="676" height="283.5"/>
+                                        <state key="normal" image="AstroidButton"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pzY-gl-iby" firstAttribute="leading" secondItem="gd0-op-gET" secondAttribute="leading" id="BAj-QS-Gl9"/>
+                                    <constraint firstAttribute="bottom" secondItem="pzY-gl-iby" secondAttribute="bottom" id="FVH-Vx-8cO"/>
+                                    <constraint firstAttribute="trailing" secondItem="pzY-gl-iby" secondAttribute="trailing" id="P3i-Uo-UY9"/>
+                                    <constraint firstItem="gqJ-fQ-74b" firstAttribute="leading" secondItem="gd0-op-gET" secondAttribute="leading" id="Xhm-ym-sN4"/>
+                                    <constraint firstAttribute="trailing" secondItem="3mc-28-cpt" secondAttribute="trailing" id="aUq-Lo-RBD"/>
+                                    <constraint firstAttribute="trailing" secondItem="gqJ-fQ-74b" secondAttribute="trailing" id="cpI-xC-q6V"/>
+                                    <constraint firstItem="gqJ-fQ-74b" firstAttribute="top" secondItem="gd0-op-gET" secondAttribute="top" id="f5I-DF-G7r"/>
+                                    <constraint firstItem="3mc-28-cpt" firstAttribute="leading" secondItem="gd0-op-gET" secondAttribute="leading" id="m9z-rw-MiG"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFm-PX-nEg">
+                                <rect key="frame" x="312" y="20" width="144" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="a9X-w7-E8h"/>
+                                    <constraint firstAttribute="width" constant="144" id="wf7-pW-kdR"/>
+                                </constraints>
+                                <state key="normal" image="Icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gd0-op-gET" secondAttribute="trailing" constant="46" id="9pW-GT-Xcv"/>
+                            <constraint firstItem="gd0-op-gET" firstAttribute="top" secondItem="GFm-PX-nEg" secondAttribute="bottom" constant="30" id="CPP-hZ-Wac"/>
+                            <constraint firstItem="GFm-PX-nEg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cve-jT-smn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gd0-op-gET" secondAttribute="bottom" constant="30" id="e6D-CJ-YPS"/>
+                            <constraint firstItem="gd0-op-gET" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="lVA-Ao-Dk4"/>
+                            <constraint firstItem="GFm-PX-nEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGs-Hn-Z8u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="asteroidButton" destination="pzY-gl-iby" id="bpD-L7-Azc"/>
+                        <outlet property="eyeButton" destination="3mc-28-cpt" id="vJd-Ot-ony"/>
+                        <outlet property="homeButton" destination="GFm-PX-nEg" id="QfV-2p-PCd"/>
+                        <outlet property="roverButton" destination="gqJ-fQ-74b" id="9dc-i7-UFm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.40625" y="78.515625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AstroidButton" width="676" height="244"/>
+        <image name="EyeInSkyButton" width="676" height="244"/>
+        <image name="Icon" width="413" height="244"/>
+        <image name="RoverCardButton" width="676" height="244"/>
+    </resources>
 </document>
