@@ -20,7 +20,13 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        roverButton.imageView?.contentMode = .scaleAspectFill
+        eyeButton.imageView?.contentMode = .scaleAspectFill
+        asteroidButton.imageView?.contentMode = .scaleAspectFill
         
+        roverButton.addTarget(self, action: #selector(roverButtonPressed), for: .touchUpInside)
+        eyeButton.addTarget(self, action: #selector(eyeButtonPressed), for: .touchUpInside)
+        asteroidButton.addTarget(self, action: #selector(asteroidButtonPressed), for: .touchUpInside)
     }
 }
 
@@ -28,15 +34,15 @@ class MainViewController: UIViewController {
 extension MainViewController {
     
     @objc func eyeButtonPressed() {
-        
+        print("Eye button")
     }
     
     @objc func asteroidButtonPressed() {
-        
+        print("Asteroid button")
     }
     
     @objc func roverButtonPressed() {
-        
+        print("Rover button")
     }
 
 }

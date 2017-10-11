@@ -34,10 +34,10 @@
 		081179711F8B654800A44D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		081179731F8B654800A44D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081179761F8B654800A44D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		081179781F8B654800A44D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0811797D1F8B654800A44D9B /* NasAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081179811F8B654800A44D9B /* NasAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasAPPTests.swift; sourceTree = "<group>"; };
 		081179831F8B654800A44D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088CC5CD1F8E13C200F601A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NasAPP/Info.plist; sourceTree = SOURCE_ROOT; };
 		0F497A9DA79154FAA925377A /* Pods-NasAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		336A9BCB6CAFB287E74EBE88 /* Pods-NasAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPPTests/Pods-NasAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F4016CA213BC70AEA014515 /* Pods_NasAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				0811796B1F8B654800A44D9B /* NasAPP */,
-				081179781F8B654800A44D9B /* Info.plist */,
 				081179801F8B654800A44D9B /* NasAPPTests */,
 				0811796A1F8B654800A44D9B /* Products */,
 				96503637C7F0AF17DA3DFF6A /* Pods */,
@@ -135,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				0811796C1F8B654800A44D9B /* AppDelegate.swift */,
+				088CC5CD1F8E13C200F601A7 /* Info.plist */,
 				081179731F8B654800A44D9B /* Assets.xcassets */,
 			);
 			path = Helpers;
