@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				0811796B1F8B654800A44D9B /* NasAPP */,
+				081179781F8B654800A44D9B /* Info.plist */,
 				081179801F8B654800A44D9B /* NasAPPTests */,
 				0811796A1F8B654800A44D9B /* Products */,
 				96503637C7F0AF17DA3DFF6A /* Pods */,
@@ -89,12 +90,10 @@
 		0811796B1F8B654800A44D9B /* NasAPP */ = {
 			isa = PBXGroup;
 			children = (
-				0811796C1F8B654800A44D9B /* AppDelegate.swift */,
-				0811796E1F8B654800A44D9B /* MainViewController.swift */,
-				081179701F8B654800A44D9B /* Main.storyboard */,
-				081179731F8B654800A44D9B /* Assets.xcassets */,
-				081179751F8B654800A44D9B /* LaunchScreen.storyboard */,
-				081179781F8B654800A44D9B /* Info.plist */,
+				088CC5C91F8E123C00F601A7 /* Model */,
+				088CC5CA1F8E124600F601A7 /* View */,
+				088CC5CB1F8E124900F601A7 /* Controller */,
+				088CC5CC1F8E126400F601A7 /* Helpers */,
 			);
 			path = NasAPP;
 			sourceTree = "<group>";
@@ -106,6 +105,39 @@
 				081179831F8B654800A44D9B /* Info.plist */,
 			);
 			path = NasAPPTests;
+			sourceTree = "<group>";
+		};
+		088CC5C91F8E123C00F601A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		088CC5CA1F8E124600F601A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				081179751F8B654800A44D9B /* LaunchScreen.storyboard */,
+				081179701F8B654800A44D9B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		088CC5CB1F8E124900F601A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0811796E1F8B654800A44D9B /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		088CC5CC1F8E126400F601A7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0811796C1F8B654800A44D9B /* AppDelegate.swift */,
+				081179731F8B654800A44D9B /* Assets.xcassets */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		6824DCBC9EE20E1B252C16DD /* Frameworks */ = {

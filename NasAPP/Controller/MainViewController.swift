@@ -27,6 +27,14 @@ class MainViewController: UIViewController {
 //MARK: - Navigation
 extension MainViewController {
     
+    @objc func eyeButtonPressed() {
+        
+    }
+    
+    @objc func asteroidButtonPressed() {
+        
+    }
+    
     @objc func roverButtonPressed() {
         
     }
