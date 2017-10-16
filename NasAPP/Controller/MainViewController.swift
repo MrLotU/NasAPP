@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: NasAPPViewController {
 
     //MARK: Outlets
     
@@ -16,7 +16,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var roverButton: UIButton!
     @IBOutlet weak var eyeButton: UIButton!
     @IBOutlet weak var asteroidButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +31,23 @@ class MainViewController: UIViewController {
 
 //MARK: - Navigation
 extension MainViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
     @objc func eyeButtonPressed() {
         print("Eye button")
+        performSegue(withIdentifier: "showEarthEye", sender: nil)
     }
     
     @objc func asteroidButtonPressed() {
         print("Asteroid button")
+        performSegue(withIdentifier: "showAsteroids", sender: nil)
     }
     
     @objc func roverButtonPressed() {
         print("Rover button")
+        performSegue(withIdentifier: "showRover", sender: nil)
     }
-
 }
 
