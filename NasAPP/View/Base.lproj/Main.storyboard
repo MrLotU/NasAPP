@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,9 +86,35 @@
                     <view key="view" contentMode="scaleToFill" id="9bA-hz-Gby">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EyeHeader" translatesAutoresizingMaskIntoConstraints="NO" id="tHb-8V-QqD">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tHb-8V-QqD" secondAttribute="height" multiplier="192:43" id="gFU-wC-sTf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnH-XT-zT1">
+                                <rect key="frame" x="312" y="19" width="144" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="oi0-Wo-5cv"/>
+                                    <constraint firstAttribute="width" constant="144" id="q8d-OF-KRN"/>
+                                </constraints>
+                                <state key="normal" image="Icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tHb-8V-QqD" firstAttribute="trailing" secondItem="sf3-GP-tMQ" secondAttribute="trailing" id="32L-il-ldA"/>
+                            <constraint firstItem="tHb-8V-QqD" firstAttribute="top" secondItem="9bA-hz-Gby" secondAttribute="top" id="PGI-QR-B1f"/>
+                            <constraint firstItem="gnH-XT-zT1" firstAttribute="centerX" secondItem="9bA-hz-Gby" secondAttribute="centerX" id="Yfa-DV-dV3"/>
+                            <constraint firstItem="gnH-XT-zT1" firstAttribute="top" secondItem="9bA-hz-Gby" secondAttribute="top" constant="19" id="xJL-K9-3Re"/>
+                            <constraint firstItem="tHb-8V-QqD" firstAttribute="leading" secondItem="sf3-GP-tMQ" secondAttribute="leading" id="zrC-I0-m8X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sf3-GP-tMQ"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="gnH-XT-zT1" id="f3e-rE-42r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tit-mM-Ugr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,9 +127,35 @@
                     <view key="view" contentMode="scaleToFill" id="nK7-E7-oSt">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RoverHeader" translatesAutoresizingMaskIntoConstraints="NO" id="Rr4-UU-Dep">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rr4-UU-Dep" secondAttribute="height" multiplier="192:43" id="J8R-af-EZ0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydl-be-H85">
+                                <rect key="frame" x="312" y="19" width="144" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="Ot0-Nc-S3w"/>
+                                    <constraint firstAttribute="height" constant="93" id="W8O-Z5-dgf"/>
+                                </constraints>
+                                <state key="normal" image="Icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ydl-be-H85" firstAttribute="centerX" secondItem="nK7-E7-oSt" secondAttribute="centerX" id="6pk-yh-3HC"/>
+                            <constraint firstItem="Rr4-UU-Dep" firstAttribute="leading" secondItem="d2Q-d9-mSW" secondAttribute="leading" id="8fp-3k-bRR"/>
+                            <constraint firstItem="Ydl-be-H85" firstAttribute="top" secondItem="nK7-E7-oSt" secondAttribute="top" constant="19" id="Pn3-F1-zgq"/>
+                            <constraint firstItem="Rr4-UU-Dep" firstAttribute="top" secondItem="nK7-E7-oSt" secondAttribute="top" id="Qbw-bH-rbb"/>
+                            <constraint firstItem="Rr4-UU-Dep" firstAttribute="trailing" secondItem="d2Q-d9-mSW" secondAttribute="trailing" id="VRO-AD-Vhq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d2Q-d9-mSW"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="Ydl-be-H85" id="8zH-Vf-8Uk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOq-Ar-wjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,9 +168,35 @@
                     <view key="view" contentMode="scaleToFill" id="mmI-Vs-1VF">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AsteroidHeader" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-aS-sEe">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nm5-aS-sEe" secondAttribute="height" multiplier="192:43" id="3HC-De-vy7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mn-bm-bFQ">
+                                <rect key="frame" x="312" y="19" width="144" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="ajl-Wt-5gc"/>
+                                    <constraint firstAttribute="width" constant="144" id="xr6-Ji-uyb"/>
+                                </constraints>
+                                <state key="normal" image="Icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nm5-aS-sEe" firstAttribute="trailing" secondItem="amb-uL-3bm" secondAttribute="trailing" id="Ixs-bc-oVb"/>
+                            <constraint firstItem="nm5-aS-sEe" firstAttribute="leading" secondItem="amb-uL-3bm" secondAttribute="leading" id="VBe-U5-pkT"/>
+                            <constraint firstItem="8mn-bm-bFQ" firstAttribute="centerX" secondItem="mmI-Vs-1VF" secondAttribute="centerX" id="oZS-19-MbW"/>
+                            <constraint firstItem="8mn-bm-bFQ" firstAttribute="top" secondItem="mmI-Vs-1VF" secondAttribute="top" constant="19" id="rHI-fM-hxt"/>
+                            <constraint firstItem="nm5-aS-sEe" firstAttribute="top" secondItem="mmI-Vs-1VF" secondAttribute="top" id="vex-NY-YMV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="amb-uL-3bm"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="8mn-bm-bFQ" id="dJG-71-Elb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNB-R5-7DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,9 +204,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AsteroidHeader" width="767" height="172"/>
         <image name="AsteroidImage" width="676" height="244"/>
+        <image name="EyeHeader" width="768" height="172"/>
         <image name="EyeImage" width="676" height="244"/>
         <image name="Icon" width="413" height="244"/>
+        <image name="RoverHeader" width="768" height="172"/>
         <image name="RoverImage" width="676" height="244"/>
     </resources>
 </document>

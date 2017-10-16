@@ -10,9 +10,10 @@ import UIKit
 
 class RoverViewController: NasAPPViewController {
 
+    @IBOutlet weak var homeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
 
