@@ -6,9 +6,7 @@ target 'NasAPP' do
   use_frameworks!
 
   # Pods for NasAPP
-  pod 'Alamofire', '~> 4.5'
-  pod 'AlamofireImage', '~> 3.3'
-  pod 'SwiftyJSON'
+  pod 'NasAPI', :path => '~/Documents/NasAPI/'
 
   target 'NasAPPTests' do
     inherit! :search_paths
