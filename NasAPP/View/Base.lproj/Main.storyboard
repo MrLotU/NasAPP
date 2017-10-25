@@ -296,20 +296,34 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uEZ-uA-Zve">
                                 <rect key="frame" x="0.0" y="172" width="768" height="765"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vVP-xk-r9V">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="vVP-xk-r9V">
+                                    <size key="itemSize" width="228" height="203"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="roverImageCell" id="zDM-or-M5L">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="roverImageCell" id="zDM-or-M5L" customClass="RoverImageCollectionViewCell" customModule="NasAPP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="228" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bph-9o-LZl">
+                                                    <rect key="frame" x="5" y="5" width="218" height="193"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Bph-9o-LZl" secondAttribute="trailing" constant="5" id="00Y-Tj-mKM"/>
+                                            <constraint firstItem="Bph-9o-LZl" firstAttribute="leading" secondItem="zDM-or-M5L" secondAttribute="leading" constant="5" id="KxT-ee-4Kd"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bph-9o-LZl" secondAttribute="bottom" constant="5" id="erl-mv-Noq"/>
+                                            <constraint firstItem="Bph-9o-LZl" firstAttribute="top" secondItem="zDM-or-M5L" secondAttribute="top" constant="5" id="hXL-K6-LoM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="roverImageView" destination="Bph-9o-LZl" id="6fL-rK-t5e"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

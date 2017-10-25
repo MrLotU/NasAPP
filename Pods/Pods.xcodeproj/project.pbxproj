@@ -23,7 +23,7 @@
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922925F985A0BE509BF6E6AF358DDF5 /* TaskDelegate.swift */; };
 		37F951F2BDB75BD682C2999EB7B51A35 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E53BA326A664727CB6681DD5C1AD3 /* AlamofireImage-dummy.m */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555ECEA7A26B5DE16C7B80F5EC31F0D /* Request.swift */; };
-		57D7558C277D38719B27D998D7F8D24C /* RoverImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D521D978A734478F2CD3956D45D528 /* RoverImages.swift */; };
+		57D7558C277D38719B27D998D7F8D24C /* RoverImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316F6C0DA25ABA494C8842079F57911D /* RoverImages.swift */; };
 		589F805F2506CA651F8FBA716DF97D33 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3222625665C5FFE6C4AC472FC9767 /* SwiftyJSON.swift */; };
 		5A71770DB80FCBFB32E1F521E2873914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C07EC74B6330A1B1C0EC5CEAD41D09 /* Foundation.framework */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56C1D43EC617661E7AA05605BA504E /* DispatchQueue+Alamofire.swift */; };
@@ -52,12 +52,12 @@
 		D9E544B8CB42DA8DD44838F83610D8E0 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46429DB2D330C14F622B3D838CD70B95 /* ImageCache.swift */; };
 		DE49F6F1673722EFD4D76453668F2A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C07EC74B6330A1B1C0EC5CEAD41D09 /* Foundation.framework */; };
 		E1FF4985892E23B75A3381EFF830DFD5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390334C3ED70436138F35610F7550270 /* Image.swift */; };
-		E952E9FE241180302788BE3CC024DEAB /* NasAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3AC325002C69A305BB0B64C99747A /* NasAPI-dummy.m */; };
+		E952E9FE241180302788BE3CC024DEAB /* NasAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B40EE06F69F9CEB8A69C925DA41D9BA /* NasAPI-dummy.m */; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85772A3E1DFBAEC545789F68EE3B01A2 /* Notifications.swift */; };
-		F24C161BDF12A8730431050EAFD14437 /* NasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5E47EA87F7CB08ADB236D4EB001DFF /* NasAPI.swift */; };
+		F24C161BDF12A8730431050EAFD14437 /* NasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE49E9EF0417FF306B9623088313A /* NasAPI.swift */; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B29A5A2A1865EF758EFC42D551DC2 /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A5D8A5CC22B4C565EC7BA946B9189 /* Alamofire.swift */; };
-		FE562D6631CFF7E1549403839A0952D0 /* NasAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7C15408D7EE224AD9137D734903A92 /* NasAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE562D6631CFF7E1549403839A0952D0 /* NasAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972A300DD59875A0032EE5B7B1CDB6E5 /* NasAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +124,6 @@
 		05ADAD259D628508E4CAE48D16C182BD /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		0BE3368A311B297755457AB1623E4DEF /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
 		0F13E4352CB1FA6950F9F6CB0526F411 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13D521D978A734478F2CD3956D45D528 /* RoverImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoverImages.swift; path = NasAPI/Classes/RoverImages.swift; sourceTree = "<group>"; };
 		16186FD5BB6E3794BF60A3606FD8638F /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		1960AACA0D0D93DDEABB5CC888837E6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9FDB7A729A9611C67694866B5A75B7 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,15 +138,14 @@
 		2BA3F32CBC74ECAA879BB103E15E7ED3 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		2C5A5D8A5CC22B4C565EC7BA946B9189 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		2CE2F7A8D173723A17D91690C6144736 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		2DA3AC325002C69A305BB0B64C99747A /* NasAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NasAPI-dummy.m"; sourceTree = "<group>"; };
+		316F6C0DA25ABA494C8842079F57911D /* RoverImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoverImages.swift; path = NasAPI/Classes/RoverImages.swift; sourceTree = "<group>"; };
 		390334C3ED70436138F35610F7550270 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
-		3E7C15408D7EE224AD9137D734903A92 /* NasAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NasAPI-umbrella.h"; sourceTree = "<group>"; };
 		41E41E06EC4EBA0F7EFFF1ED557C3C14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		445BC7F2C9B9225029F8268B64E76699 /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		44DE8CCF573E77ED0BA3489DC2D66FA9 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
 		46429DB2D330C14F622B3D838CD70B95 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
 		470777C78F3A3E9D318096B251755BC6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4720950F529EA76C98238AC8A170E786 /* NasAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NasAPI.xcconfig; sourceTree = "<group>"; };
+		475AE49E9EF0417FF306B9623088313A /* NasAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NasAPI.swift; path = NasAPI/Classes/NasAPI.swift; sourceTree = "<group>"; };
 		4922925F985A0BE509BF6E6AF358DDF5 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		4934B379D15986A92F6DE9B1F0B90D50 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
 		49BBA9FD109636372617A7C0108DEAD0 /* Pods-NasAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +161,7 @@
 		63D3222625665C5FFE6C4AC472FC9767 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		65F6D86151D4078ADC9CF9FD4E6A8816 /* Pods-NasAPP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasAPP-dummy.m"; sourceTree = "<group>"; };
 		68ECCE3F8DA12D34F84462D91090D587 /* Pods-NasAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		6B4231813B0C1598363F01FB35C660C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CEECB5AF2645320939E10044718E7ED /* Pods-NasAPPTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasAPPTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6F6A3571D260A32347810985A76A9111 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		6FD057DC0AD99E0C4998626BF39F207E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
@@ -178,7 +177,11 @@
 		8CE7302D5D3A4574C3F1296ED62E7892 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		955905BB030C05DC9C97B1852116A87B /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
+		972A300DD59875A0032EE5B7B1CDB6E5 /* NasAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NasAPI-umbrella.h"; sourceTree = "<group>"; };
+		99687A97AD1C8AB6C34EC024E8412332 /* NasAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NasAPI.xcconfig; sourceTree = "<group>"; };
 		9982E33E027DEA999D7934B08CFB77F3 /* Pods-NasAPP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NasAPP.modulemap"; sourceTree = "<group>"; };
+		9B40EE06F69F9CEB8A69C925DA41D9BA /* NasAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NasAPI-dummy.m"; sourceTree = "<group>"; };
+		9CD9A58E579A5A25373F5111B034C29A /* NasAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NasAPI-prefix.pch"; sourceTree = "<group>"; };
 		9E56C1D43EC617661E7AA05605BA504E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		A0DF252140E14D17235B1ECA18A53C1E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		A1C52679E0C7FDA9B45DD287388AD235 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
@@ -189,21 +192,18 @@
 		B4C07EC74B6330A1B1C0EC5CEAD41D09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B8428D42C80625444FBE41373E6485DB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		B98D66DB43EEC8EE078FA6A11C22D7E5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		BCCB83604FAB798B215F6A6513FA81AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEA97B267E33914EDF0EA23AEE7FC35 /* Pods-NasAPPTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NasAPPTests-frameworks.sh"; sourceTree = "<group>"; };
 		BED5476933F1CCF93BC52A770CECD245 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		C3C4B6F1EC5678745FDF64F082C9BC0A /* Pods-NasAPPTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasAPPTests-umbrella.h"; sourceTree = "<group>"; };
 		CF0F88092CCC1C4E550691539BA079C6 /* Pods-NasAPP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasAPP-umbrella.h"; sourceTree = "<group>"; };
 		D8F060D9966007FF8CA2A8CA8161A09F /* Pods-NasAPPTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NasAPPTests.modulemap"; sourceTree = "<group>"; };
-		E100E4C276F18F7F18B810F7D9E4B74E /* NasAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NasAPI-prefix.pch"; sourceTree = "<group>"; };
 		E1C9C030460EEA56ED4778913A779973 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		E4503082D1D2E4919F7332063B3F97CE /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		E4B48DF9AC56B75ECE9AC6E79A8592C6 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		E85BC12F8444FB7296661AFBCFC456AD /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCA7BB2787CC2FB8BCA583E137EF899 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		F3B46F43AFC6054CFE131F4EF6C0990D /* NasAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NasAPI.modulemap; sourceTree = "<group>"; };
 		F555ECEA7A26B5DE16C7B80F5EC31F0D /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		FB282FBFE5F453C9ACBA7901CFC69BEB /* NasAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NasAPI.modulemap; sourceTree = "<group>"; };
-		FC5E47EA87F7CB08ADB236D4EB001DFF /* NasAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NasAPI.swift; path = NasAPI/Classes/NasAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,26 +367,26 @@
 			path = "Target Support Files/Pods-NasAPP";
 			sourceTree = "<group>";
 		};
-		59AAE0B092A7CB28FAF162A34A153D74 /* Support Files */ = {
+		3488A621CE1793A4E37F4D7468074067 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BCCB83604FAB798B215F6A6513FA81AB /* Info.plist */,
-				FB282FBFE5F453C9ACBA7901CFC69BEB /* NasAPI.modulemap */,
-				4720950F529EA76C98238AC8A170E786 /* NasAPI.xcconfig */,
-				2DA3AC325002C69A305BB0B64C99747A /* NasAPI-dummy.m */,
-				E100E4C276F18F7F18B810F7D9E4B74E /* NasAPI-prefix.pch */,
-				3E7C15408D7EE224AD9137D734903A92 /* NasAPI-umbrella.h */,
+				6B4231813B0C1598363F01FB35C660C7 /* Info.plist */,
+				F3B46F43AFC6054CFE131F4EF6C0990D /* NasAPI.modulemap */,
+				99687A97AD1C8AB6C34EC024E8412332 /* NasAPI.xcconfig */,
+				9B40EE06F69F9CEB8A69C925DA41D9BA /* NasAPI-dummy.m */,
+				9CD9A58E579A5A25373F5111B034C29A /* NasAPI-prefix.pch */,
+				972A300DD59875A0032EE5B7B1CDB6E5 /* NasAPI-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../NasAPP/Pods/Target Support Files/NasAPI";
+			path = "../NasAPPTH/Pods/Target Support Files/NasAPI";
 			sourceTree = "<group>";
 		};
-		5E0836ABA16A3FBDD1BC1057FD21588D /* NasAPI */ = {
+		467FC2DBAB1A746FC6737D789A6356E6 /* NasAPI */ = {
 			isa = PBXGroup;
 			children = (
-				FC5E47EA87F7CB08ADB236D4EB001DFF /* NasAPI.swift */,
-				13D521D978A734478F2CD3956D45D528 /* RoverImages.swift */,
-				59AAE0B092A7CB28FAF162A34A153D74 /* Support Files */,
+				475AE49E9EF0417FF306B9623088313A /* NasAPI.swift */,
+				316F6C0DA25ABA494C8842079F57911D /* RoverImages.swift */,
+				3488A621CE1793A4E37F4D7468074067 /* Support Files */,
 			);
 			name = NasAPI;
 			path = /Users/jarikoopman/Documents/NasAPI;
@@ -459,7 +459,7 @@
 		9AD735144A0EACF060F132862CBCB740 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E0836ABA16A3FBDD1BC1057FD21588D /* NasAPI */,
+				467FC2DBAB1A746FC6737D789A6356E6 /* NasAPI */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -874,7 +874,7 @@
 		};
 		17EC438DB901F2A5BC543DD4B9B139D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4720950F529EA76C98238AC8A170E786 /* NasAPI.xcconfig */;
+			baseConfigurationReference = 99687A97AD1C8AB6C34EC024E8412332 /* NasAPI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1287,7 +1287,7 @@
 		};
 		DC09E1D95415508CE77E08A78837145F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4720950F529EA76C98238AC8A170E786 /* NasAPI.xcconfig */;
+			baseConfigurationReference = 99687A97AD1C8AB6C34EC024E8412332 /* NasAPI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

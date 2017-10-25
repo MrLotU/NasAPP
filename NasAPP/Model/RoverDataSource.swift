@@ -12,8 +12,12 @@ import NasAPI
 class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
     
     fileprivate var images: [UIImage] = []
+    let collectionView: UICollectionView
+    let delegate: ImagePickerDelegate
     
-    override init() {
+    init(collectionView: UICollectionView, delegate: ImagePickerDelegate) {
+        self.delegate = delegate
+        self.collectionView = collectionView
         super.init()
         self.getImages()
     }
@@ -22,8 +26,22 @@ class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDel
         return images.count
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! RoverImageCollectionViewCell
+        delegate.didFinishPickingImage(image: cell.image!)
+        cell.backgroundColor = .green
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! RoverImageCollectionViewCell
+        cell.backgroundColor = .clear
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "roverImageCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "roverImageCell", for: indexPath) as! RoverImageCollectionViewCell
+        let image = images[indexPath.row]
+        cell.image = image
+        cell.backgroundColor = .clear
         
         return cell
     }
@@ -44,9 +62,17 @@ extension RoverDataSource {
                 return
             }
             for image in images {
-                print(image.id)
+                image.getImage(completion: { (image, error) in
+                    if let error = error {
+                        print("ERROR: \(error)")
+                    }
+                    if let image = image {
+                        self.images.append(image)
+                        self.collectionView.reloadData()
+                        print(self.images.count)
+                    }
+                })
             }
-            print(images.count)
         })
     }
 }
