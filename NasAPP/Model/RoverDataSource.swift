@@ -69,7 +69,6 @@ extension RoverDataSource {
                     if let image = image {
                         self.images.append(image)
                         self.collectionView.reloadData()
-                        print(self.images.count)
                     }
                 })
             }
