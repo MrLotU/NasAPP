@@ -107,7 +107,6 @@ extension AsteroidDataSource: UIScrollViewDelegate {
         for subview in view.subviews {
             subview.center.x = view.frame.width/2
         }
-
         return view
     }
     
@@ -117,7 +116,6 @@ extension AsteroidDataSource: UIScrollViewDelegate {
         delegate.open(url: asteroids[Int(currentPage)].jplUrl)
     }
 
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageWidth: CGFloat = scrollView.frame.width
         let currentPage: CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1

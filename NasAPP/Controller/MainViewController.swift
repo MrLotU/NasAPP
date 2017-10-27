@@ -31,10 +31,6 @@ class MainViewController: NasAPPViewController {
 
 //MARK: - Navigation
 extension MainViewController {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
-    
     @objc func eyeButtonPressed() {
         performSegue(withIdentifier: "showEarthEye", sender: nil)
     }
