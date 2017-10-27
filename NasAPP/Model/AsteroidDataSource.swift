@@ -91,7 +91,7 @@ extension AsteroidDataSource: UIScrollViewDelegate {
         approachDataLabel.textColor = .white
         approachDataLabel.font = UIFont(name: approachDataLabel.font.fontName, size: 30.0)
         approachDataLabel.textAlignment = .center
-        approachDataLabel.text = "Approach Data\nDate: \(asteroids[index].approachData.date)\nSpeed: \(asteroids[index].approachData.relativeSpeed) kilometers per hour\nDistance: \(asteroids[index].approachData.distance) kilometers\nOrbiting body: \(asteroids[index].approachData.orbitingBody)"
+        approachDataLabel.text = "Approach Data\nDate: \(asteroids[index].approachData.dateStr)\nSpeed: \(asteroids[index].approachData.relativeSpeed) kilometers per hour\nDistance: \(asteroids[index].approachData.distance) kilometers\nOrbiting body: \(asteroids[index].approachData.orbitingBody)"
         approachDataLabel.numberOfLines = 0
         approachDataLabel.sizeToFit()
         view.addSubview(approachDataLabel)
