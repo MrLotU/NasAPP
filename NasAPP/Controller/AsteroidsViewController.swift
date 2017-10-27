@@ -8,29 +8,24 @@
 
 import UIKit
 
-class AsteroidsViewController: NasAPPViewController {
+class AsteroidsViewController: NasAPPViewController, AsteroidDelegate {
 
     @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    lazy var dataSource: AsteroidDataSource = {
+        return AsteroidDataSource(collectionView: self.collectionView, delegate: self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        self.collectionView.delegate = dataSource
+        self.collectionView.dataSource = dataSource
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
