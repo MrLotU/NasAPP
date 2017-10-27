@@ -36,17 +36,14 @@ extension MainViewController {
     }
     
     @objc func eyeButtonPressed() {
-        print("Eye button")
         performSegue(withIdentifier: "showEarthEye", sender: nil)
     }
     
     @objc func asteroidButtonPressed() {
-        print("Asteroid button")
         performSegue(withIdentifier: "showAsteroids", sender: nil)
     }
     
     @objc func roverButtonPressed() {
-        print("Rover button")
         performSegue(withIdentifier: "showRover", sender: nil)
     }
 }
