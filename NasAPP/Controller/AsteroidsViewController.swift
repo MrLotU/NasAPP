@@ -11,21 +11,21 @@ import UIKit
 class AsteroidsViewController: NasAPPViewController, AsteroidDelegate {
 
     @IBOutlet weak var homeButton: UIButton!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     lazy var dataSource: AsteroidDataSource = {
-        return AsteroidDataSource(collectionView: self.collectionView, delegate: self)
+        return AsteroidDataSource(scrollView: self.scrollView, pageControl: self.pageControl, delegate: self)
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
-        self.collectionView.delegate = dataSource
-        self.collectionView.dataSource = dataSource
+        scrollView.delegate = dataSource
+        dataSource.setup()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func open(url: String) {
+        UIApplication.shared.open(URL(string: url)!, options: [:])
     }
 }

@@ -148,7 +148,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-8k-DqB">
                                         <rect key="frame" x="0.0" y="0.0" width="648" height="410"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Greetings from Mars!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Du-wQ-9h4">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Du-wQ-9h4">
                                         <rect key="frame" x="0.0" y="0.0" width="405" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -203,8 +203,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="jee-Sn-IhW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="Random Image">
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="Change Text Color">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -256,12 +256,12 @@
                     </view>
                     <connections>
                         <outlet property="addTextButton" destination="FdP-Xy-YTH" id="6GV-b7-sDr"/>
+                        <outlet property="changeTextColorButton" destination="lgD-8N-dr0" id="T2G-fG-zCg"/>
                         <outlet property="chooseImageButton" destination="6VL-EP-xGm" id="ud9-9T-EOy"/>
                         <outlet property="homeButton" destination="Ydl-be-H85" id="8zH-Vf-8Uk"/>
                         <outlet property="postcardImageView" destination="dGn-8k-DqB" id="fry-EF-Idw"/>
                         <outlet property="postcardTextField" destination="6Du-wQ-9h4" id="LV1-Ty-Mlg"/>
                         <outlet property="postcardView" destination="uWp-4K-sgu" id="sfg-hf-RXH"/>
-                        <outlet property="randomImageButton" destination="lgD-8N-dr0" id="J5E-rm-sf4"/>
                         <outlet property="removeTextButton" destination="C0f-NU-Hkm" id="ZU5-u1-GZp"/>
                         <outlet property="sendButton" destination="KiI-gI-xHC" id="cAh-uH-lH8"/>
                         <segue destination="2Vg-U4-XXv" kind="show" identifier="pickRoverImage" id="yQD-id-Cld"/>
@@ -388,32 +388,23 @@
                                 </constraints>
                                 <state key="normal" image="Icon"/>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-U7-11S">
-                                <rect key="frame" x="242" y="391" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZhR-Tj-cIc">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MPc-sD-Mha">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="93a-9j-McO">
+                                <rect key="frame" x="0.0" y="172" width="768" height="852"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WTS-vJ-H49">
+                                <rect key="frame" x="364" y="979" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="amb-uL-3bm" firstAttribute="bottom" secondItem="WTS-vJ-H49" secondAttribute="bottom" constant="8" id="4jm-Hm-guW"/>
                             <constraint firstItem="nm5-aS-sEe" firstAttribute="trailing" secondItem="amb-uL-3bm" secondAttribute="trailing" id="Ixs-bc-oVb"/>
                             <constraint firstItem="nm5-aS-sEe" firstAttribute="leading" secondItem="amb-uL-3bm" secondAttribute="leading" id="VBe-U5-pkT"/>
+                            <constraint firstItem="amb-uL-3bm" firstAttribute="bottom" secondItem="93a-9j-McO" secondAttribute="bottom" id="WKl-aX-yrt"/>
+                            <constraint firstItem="93a-9j-McO" firstAttribute="top" secondItem="nm5-aS-sEe" secondAttribute="bottom" id="fAL-5p-JEd"/>
+                            <constraint firstItem="WTS-vJ-H49" firstAttribute="centerX" secondItem="mmI-Vs-1VF" secondAttribute="centerX" id="gMf-T2-M58"/>
+                            <constraint firstItem="amb-uL-3bm" firstAttribute="trailing" secondItem="93a-9j-McO" secondAttribute="trailing" id="hrJ-A0-Awt"/>
+                            <constraint firstItem="93a-9j-McO" firstAttribute="leading" secondItem="amb-uL-3bm" secondAttribute="leading" id="ncv-Bv-z2Y"/>
                             <constraint firstItem="8mn-bm-bFQ" firstAttribute="centerX" secondItem="mmI-Vs-1VF" secondAttribute="centerX" id="oZS-19-MbW"/>
                             <constraint firstItem="8mn-bm-bFQ" firstAttribute="top" secondItem="mmI-Vs-1VF" secondAttribute="top" constant="19" id="rHI-fM-hxt"/>
                             <constraint firstItem="nm5-aS-sEe" firstAttribute="top" secondItem="mmI-Vs-1VF" secondAttribute="top" id="vex-NY-YMV"/>
@@ -421,13 +412,14 @@
                         <viewLayoutGuide key="safeArea" id="amb-uL-3bm"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="cAR-U7-11S" id="dRz-bR-c2y"/>
                         <outlet property="homeButton" destination="8mn-bm-bFQ" id="dJG-71-Elb"/>
+                        <outlet property="pageControl" destination="WTS-vJ-H49" id="gNm-Tb-ITW"/>
+                        <outlet property="scrollView" destination="93a-9j-McO" id="adQ-3r-hcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNB-R5-7DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="747"/>
+            <point key="canvasLocation" x="115.625" y="746.484375"/>
         </scene>
     </scenes>
     <resources>

@@ -23,7 +23,7 @@ class RoverViewController: NasAPPViewController {
     @IBOutlet weak var addTextButton: UIButton!
     @IBOutlet weak var chooseImageButton: UIButton!
     @IBOutlet weak var removeTextButton: UIButton!
-    @IBOutlet weak var randomImageButton: UIButton!
+    @IBOutlet weak var changeTextColorButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
     
     override func viewDidLoad() {
@@ -33,6 +33,8 @@ class RoverViewController: NasAPPViewController {
         postcardTextField.addInteraction(dragInteraction)
         postcardTextField.isUserInteractionEnabled = true
         postcardTextField.delegate = self
+        postcardTextField.text = "Greetings from mars!"
+        postcardTextField.sizeToFit()
         
         let dropInteraction = UIDropInteraction(delegate: self)
         postcardView.addInteraction(dropInteraction)
@@ -42,6 +44,7 @@ class RoverViewController: NasAPPViewController {
         addTextButton.addTarget(self, action: #selector(pressedAddTextButton), for: .touchUpInside)
         removeTextButton.addTarget(self, action: #selector(pressedRemoveTextButton), for: .touchUpInside)
         chooseImageButton.addTarget(self, action: #selector(selectImage), for: .touchUpInside)
+        changeTextColorButton.addTarget(self, action: #selector(changeTextColor), for: .touchUpInside)
         sendButton.addTarget(self, action: #selector(send), for: .touchUpInside)
         
         postcardImageView.contentMode = .scaleAspectFill
@@ -136,6 +139,18 @@ extension RoverViewController: UITextFieldDelegate {
             textField.text = "Click to edit"
         }
         textField.sizeToFit()
+    }
+    
+    @objc func changeTextColor() {
+        if postcardTextField.textColor == .black {
+            let text = postcardTextField.text
+            postcardTextField.textColor = .white
+            postcardTextField.text = text
+        } else {
+            let text = postcardTextField.text
+            postcardTextField.textColor = .black
+            postcardTextField.text = text
+        }
     }
     
     @objc func pressedAddTextButton() {
