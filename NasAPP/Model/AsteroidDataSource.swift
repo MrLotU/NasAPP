@@ -46,55 +46,67 @@ extension AsteroidDataSource: UIScrollViewDelegate {
         let scrollViewWidth = scrollView.frame.width
         let view = UIView(frame: CGRect(x: scrollViewWidth * CGFloat(index), y: 0, width: scrollView.frame.width, height: scrollView.frame.height))
         
-        let idLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        let idLabel = UILabel(frame: CGRect(x: 0, y: 238-172, width: 0, height: 0))
         idLabel.textColor = .white
+        idLabel.font = UIFont(name: idLabel.font.fontName, size: 30.0)
         idLabel.text = "Asteroid id: \(asteroids[index].id)"
         idLabel.sizeToFit()
         view.addSubview(idLabel)
         
-        let nameLabel = UILabel(frame: CGRect(x: 0, y: 20, width: 0, height: 0))
+        let nameLabel = UILabel(frame: CGRect(x: 0, y: 274-172, width: 0, height: 0))
         nameLabel.textColor = .white
+        nameLabel.font = UIFont(name: nameLabel.font.fontName, size: 30.0)
         nameLabel.text = "Name: \(asteroids[index].name)"
         nameLabel.sizeToFit()
         view.addSubview(nameLabel)
         
-        let dataLabel = UILabel(frame: CGRect(x: 0, y: 40, width: 0, height: 0))
+        let dataLabel = UILabel(frame: CGRect(x: 0, y: 353-172, width: 0, height: 0))
         dataLabel.textColor = .white
+        dataLabel.font = UIFont(name: dataLabel.font.fontName, size: 30.0)
         dataLabel.text = "Asteroid Data"
         dataLabel.sizeToFit()
         view.addSubview(dataLabel)
         
-        let diameterLabel = UILabel(frame: CGRect(x: 0, y: 60, width: 0, height: 0))
+        let diameterLabel = UILabel(frame: CGRect(x: 0, y: 399-172, width: 0, height: 0))
         diameterLabel.textColor = .white
+        diameterLabel.font = UIFont(name: diameterLabel.font.fontName, size: 30.0)
         diameterLabel.text = "Diameter: \(asteroids[index].diameter) meters"
         diameterLabel.sizeToFit()
         view.addSubview(diameterLabel)
         
-        let hazLabel = UILabel(frame: CGRect(x: 0, y: 80, width: 0, height: 0))
+        let hazLabel = UILabel(frame: CGRect(x: 0, y: 446-172, width: 0, height: 0))
         hazLabel.textColor = .white
+        hazLabel.font = UIFont(name: hazLabel.font.fontName, size: 30.0)
         hazLabel.text = "Is potentially hazardous:"
         hazLabel.sizeToFit()
         view.addSubview(hazLabel)
         
-        let hazvLabel = UILabel(frame: CGRect(x: 0, y: 100, width: 0, height: 0))
+        let hazvLabel = UILabel(frame: CGRect(x: 0, y: 491-172, width: 0, height: 0))
         if asteroids[index].hazardous {hazvLabel.textColor = .red; hazvLabel.text = "YES"} else {hazvLabel.textColor = .green; hazvLabel.text = "NO"}
+        hazvLabel.font = UIFont(name: hazvLabel.font.fontName, size: 30.0)
         hazvLabel.sizeToFit()
         view.addSubview(hazvLabel)
         
-        let approachDataLabel = UILabel(frame: CGRect(x: 0, y: 180, width: 0, height: 0))
+        let approachDataLabel = UILabel(frame: CGRect(x: 0, y: 570-172, width: 0, height: 0))
         approachDataLabel.textColor = .white
+        approachDataLabel.font = UIFont(name: approachDataLabel.font.fontName, size: 30.0)
         approachDataLabel.textAlignment = .center
         approachDataLabel.text = "Approach Data\nDate: \(asteroids[index].approachData.date)\nSpeed: \(asteroids[index].approachData.relativeSpeed) kilometers per hour\nDistance: \(asteroids[index].approachData.distance) kilometers\nOrbiting body: \(asteroids[index].approachData.orbitingBody)"
         approachDataLabel.numberOfLines = 0
         approachDataLabel.sizeToFit()
         view.addSubview(approachDataLabel)
         
-        let learnMoreButton = UIButton(frame: CGRect(x: 300, y: 0, width: 0, height: 0))
+        let learnMoreButton = UIButton(frame: CGRect(x: 0, y: 863-172, width: 0, height: 0))
         learnMoreButton.titleLabel?.textColor = .white
+        learnMoreButton.titleLabel?.font = UIFont(name: (learnMoreButton.titleLabel?.font.fontName)!, size: 30.0)
         learnMoreButton.setTitle("Click here to read more", for: .normal)
         learnMoreButton.addTarget(self, action: #selector(learnMoreButtonPressed), for: .touchUpInside)
         learnMoreButton.sizeToFit()
         view.addSubview(learnMoreButton)
+        
+        for subview in view.subviews {
+            subview.center.x = view.frame.width/2
+        }
 
         return view
     }
@@ -127,10 +139,6 @@ extension AsteroidDataSource {
                 print("Something went wrong!"); return
             }
             self.asteroids = asteroids
-            print(self.asteroids.count)
-            for asteroid in self.asteroids {
-                print(asteroid.name)
-            }
             self.setupScrollView()
         }
     }
