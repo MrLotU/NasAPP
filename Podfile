@@ -6,7 +6,7 @@ target 'NasAPP' do
   use_frameworks!
 
   # Pods for NasAPP
-  pod 'NasAPI', :path => '~/Documents/NasAPI/'
+  pod 'NasAPI', :git => 'https://github.com/MrLotU/NasAPI'
 
   target 'NasAPPTests' do
     inherit! :search_paths

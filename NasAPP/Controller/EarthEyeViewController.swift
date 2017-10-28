@@ -14,6 +14,5 @@ class EarthEyeViewController: NasAPPViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
-        // Do any additional setup after loading the view.
     }
 }
