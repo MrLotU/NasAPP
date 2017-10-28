@@ -16,9 +16,14 @@ class MainViewController: NasAPPViewController {
     @IBOutlet weak var roverButton: UIButton!
     @IBOutlet weak var eyeButton: UIButton!
     @IBOutlet weak var asteroidButton: UIButton!
+    @IBOutlet weak var launchImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        launchImageView.image = UIImage(named: "LaunchScreen")
+        UIView.animate(withDuration: 1) {
+            self.launchImageView.alpha = 0
+        }
         roverButton.imageView?.contentMode = .scaleAspectFill
         eyeButton.imageView?.contentMode = .scaleAspectFill
         asteroidButton.imageView?.contentMode = .scaleAspectFill

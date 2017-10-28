@@ -126,7 +126,7 @@ extension AsteroidDataSource: UIScrollViewDelegate {
 // MARK: - Networking
 
 extension AsteroidDataSource {
-    private func getAsteroids() {
+    func getAsteroids() {
         NasAPI.getAsteroidDataForToday(detailed: false) { (asteroids, error) in
             if let error = error {
                 //TODO: Handle

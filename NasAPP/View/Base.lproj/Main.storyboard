@@ -53,12 +53,19 @@
                                 </constraints>
                                 <state key="normal" image="Icon"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-RB-xm7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.12549019610000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gd0-op-gET" secondAttribute="trailing" constant="46" id="9pW-GT-Xcv"/>
+                            <constraint firstItem="WCU-RB-xm7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="A9c-0V-Qzl"/>
                             <constraint firstItem="gd0-op-gET" firstAttribute="top" secondItem="GFm-PX-nEg" secondAttribute="bottom" constant="30" id="CPP-hZ-Wac"/>
                             <constraint firstItem="GFm-PX-nEg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Cve-jT-smn"/>
+                            <constraint firstItem="WCU-RB-xm7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GYI-pn-PzJ"/>
+                            <constraint firstItem="WCU-RB-xm7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ioj-vn-5ZZ"/>
+                            <constraint firstItem="WCU-RB-xm7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NQw-Ui-p5Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gd0-op-gET" secondAttribute="bottom" constant="30" id="e6D-CJ-YPS"/>
                             <constraint firstItem="gd0-op-gET" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="lVA-Ao-Dk4"/>
                             <constraint firstItem="GFm-PX-nEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGs-Hn-Z8u"/>
@@ -69,6 +76,7 @@
                         <outlet property="asteroidButton" destination="pzY-gl-iby" id="ft0-hy-pjO"/>
                         <outlet property="eyeButton" destination="3mc-28-cpt" id="b70-qa-MMN"/>
                         <outlet property="homeButton" destination="GFm-PX-nEg" id="on7-QV-ccZ"/>
+                        <outlet property="launchImageView" destination="WCU-RB-xm7" id="LJF-zL-gix"/>
                         <outlet property="roverButton" destination="gqJ-fQ-74b" id="dFh-TN-neQ"/>
                         <segue destination="TcT-k4-Pgt" kind="show" identifier="showEarthEye" id="fPR-bB-NvM"/>
                         <segue destination="obM-lW-NUe" kind="show" identifier="showRover" id="ExB-ve-3Me"/>

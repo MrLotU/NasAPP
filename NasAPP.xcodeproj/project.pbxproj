@@ -19,6 +19,7 @@
 		085175A41F8E1A39001931F0 /* AsteroidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085175A31F8E1A39001931F0 /* AsteroidsViewController.swift */; };
 		085175A61F8E1A45001931F0 /* EarthEyeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085175A51F8E1A45001931F0 /* EarthEyeViewController.swift */; };
 		086A71941FA08E6700ACDFBC /* RoverImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A71931FA08E6700ACDFBC /* RoverImageCollectionViewCell.swift */; };
+		08A4B0EB1FA4982700F92E2A /* EarthImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A4B0EA1FA4982700F92E2A /* EarthImageDataSource.swift */; };
 		08B016AC1F9CCEF700E14801 /* SelectRoverImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B016AB1F9CCEF700E14801 /* SelectRoverImageViewController.swift */; };
 		08CD3B9E1F94AE0800FCB64D /* NasAPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD3B9D1F94AE0800FCB64D /* NasAPPViewController.swift */; };
 		6D61D9E119F29C3677006760 /* Pods_NasAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CD250DE2EB805314991EAA /* Pods_NasAPPTests.framework */; };
@@ -52,6 +53,7 @@
 		085175A51F8E1A45001931F0 /* EarthEyeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthEyeViewController.swift; sourceTree = "<group>"; };
 		086A71931FA08E6700ACDFBC /* RoverImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		088CC5CD1F8E13C200F601A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NasAPP/Info.plist; sourceTree = SOURCE_ROOT; };
+		08A4B0EA1FA4982700F92E2A /* EarthImageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageDataSource.swift; sourceTree = "<group>"; };
 		08B016AB1F9CCEF700E14801 /* SelectRoverImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoverImageViewController.swift; sourceTree = "<group>"; };
 		08CD3B9D1F94AE0800FCB64D /* NasAPPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasAPPViewController.swift; sourceTree = "<group>"; };
 		0F497A9DA79154FAA925377A /* Pods-NasAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasAPP/Pods-NasAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				0847E0A41F9DF5DB00B867C7 /* RoverDataSource.swift */,
 				084BF4051FA1EAAB00C39B2C /* AsteroidDataSource.swift */,
+				08A4B0EA1FA4982700F92E2A /* EarthImageDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				086A71941FA08E6700ACDFBC /* RoverImageCollectionViewCell.swift in Sources */,
 				085175A61F8E1A45001931F0 /* EarthEyeViewController.swift in Sources */,
 				085175A41F8E1A39001931F0 /* AsteroidsViewController.swift in Sources */,
+				08A4B0EB1FA4982700F92E2A /* EarthImageDataSource.swift in Sources */,
 				08B016AC1F9CCEF700E14801 /* SelectRoverImageViewController.swift in Sources */,
 				08CD3B9E1F94AE0800FCB64D /* NasAPPViewController.swift in Sources */,
 				084BF4061FA1EAAB00C39B2C /* AsteroidDataSource.swift in Sources */,
