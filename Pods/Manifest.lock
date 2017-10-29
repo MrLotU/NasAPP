@@ -2,7 +2,7 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - NasAPI (0.4.0):
+  - NasAPI (0.4.4):
     - Alamofire (~> 4.5)
     - AlamofireImage (~> 3.3)
     - SwiftyJSON
@@ -17,13 +17,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NasAPI:
-    :commit: 13da8c6fedd14e98cdea98250d604879784c5b64
+    :commit: 3208e75a147ee9e739c26e891623f32903c904e2
     :git: https://github.com/MrLotU/NasAPI
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  NasAPI: 28736dda8040a7b2480c89eb9e53321186718e34
+  NasAPI: d0f0c8fcf66dc989845b79da1a272d3d1c10e375
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
 PODFILE CHECKSUM: 69a72fec5089593771260043a30486b3e752ec23

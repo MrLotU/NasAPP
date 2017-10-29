@@ -9,7 +9,7 @@
 import UIKit
 import NasAPI
 
-protocol AsteroidDelegate {
+protocol AsteroidDelegate: AlertDelegate {
     func open(url: String)
 }
 
@@ -129,13 +129,11 @@ extension AsteroidDataSource {
     func getAsteroids() {
         NasAPI.getAsteroidDataForToday(detailed: false) { (asteroids, error) in
             if let error = error {
-                //TODO: Handle
+                self.delegate.showAlert(withTitle: "Networkign error!", andMessage: "Something went wrong while trying to get the asteroid data! Check your internet connection and try again")
                 print("ERROR: \(error)")
                 return
             }
-            guard let asteroids = asteroids else {
-                print("Something went wrong!"); return
-            }
+            guard let asteroids = asteroids else { return }
             self.asteroids = asteroids
             self.setupScrollView()
         }

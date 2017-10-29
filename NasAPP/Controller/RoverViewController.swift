@@ -10,9 +10,6 @@ import UIKit
 import MobileCoreServices
 import MessageUI
 
-protocol ImagePickerDelegate {
-    func didFinishPickingImage(image: UIImage)
-}
 
 class RoverViewController: NasAPPViewController {
 
@@ -56,7 +53,7 @@ extension RoverViewController: MFMailComposeViewControllerDelegate {
     @objc func send() {
         let image = UIImage(view: self.postcardView)
         guard let pngImage = UIImagePNGRepresentation(image) else {
-            //TODO: Handle error
+            self.showAlert(withTitle: "Image error!", andMessage: "Something went wrong while trying to create the postcard! Try again later!")
             return
         }
         if MFMailComposeViewController.canSendMail() {
@@ -67,7 +64,7 @@ extension RoverViewController: MFMailComposeViewControllerDelegate {
             
             present(mail, animated: true)
         } else {
-            //TODO: Show failure alert
+            self.showAlert(withTitle: "Mail error!", andMessage: "Something went wrong while trying to create the email! Make sure your email is set up and try again!")
             print("Can't send mail")
         }
     }

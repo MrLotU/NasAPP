@@ -9,6 +9,10 @@
 import UIKit
 import NasAPI
 
+protocol ImagePickerDelegate: AlertDelegate {
+    func didFinishPickingImage(image: UIImage)
+}
+
 class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
     
     fileprivate var images: [UIImage] = []
@@ -53,10 +57,9 @@ extension RoverDataSource {
     func getImages() {
         NasAPI.getImages(forRoverWithName: "Curiosity", andSol: 1000, completion: { (images, error) in
             if let error = error {
-                print(error)
-                print("Error")
+                self.delegate.showAlert(withTitle: "Networkign error!", andMessage: "Something went wrong while trying to get the images! Check your internet connection and try again")
+                print("ERROR: \(error)")
                 return
-                //TODO: Handle error
             }
             guard let images = images else {
                 return
@@ -64,6 +67,7 @@ extension RoverDataSource {
             for image in images {
                 image.getImage(completion: { (image, error) in
                     if let error = error {
+                        self.delegate.showAlert(withTitle: "Networkign error!", andMessage: "Something went wrong while trying to get the images! Check your internet connection and try again")
                         print("ERROR: \(error)")
                     }
                     if let image = image {
