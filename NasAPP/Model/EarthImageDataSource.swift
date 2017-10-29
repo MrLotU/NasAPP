@@ -73,11 +73,6 @@ extension EarthImageDataSource {
                 print("Error: \(error)")
             }
             guard let image = image else { return }
-            var description = "\(self.locationName) at \(image.dateStr)"
-            if let cloudScore = image.cloudScore {
-                description += " with \(Int(cloudScore * 100))% clouds"
-            }
-            self.label.text = description
             image.getImage(completion: { (image, error) in
                 if let error = error {
                     self.delegate.showAlert(withTitle: "Networkign error!", andMessage: "Something went wrong while trying to get the image! Check your internet connection and try again")
@@ -85,6 +80,11 @@ extension EarthImageDataSource {
                 }
                 guard let image = image else { return }
                 self.imageView.image = image
+                var description = "\(self.locationName) at \(image.dateStr)"
+                if let cloudScore = image.cloudScore {
+                    description += " with \(Int(cloudScore * 100))% clouds"
+                }
+                self.label.text = description
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.isHidden = true
             })
