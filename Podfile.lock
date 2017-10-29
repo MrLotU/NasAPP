@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NasAPI:
-    :commit: 3208e75a147ee9e739c26e891623f32903c904e2
+    :commit: 7291589ec4f7d39e01ca0a99e7b888420683edaa
     :git: https://github.com/MrLotU/NasAPI
 
 SPEC CHECKSUMS:

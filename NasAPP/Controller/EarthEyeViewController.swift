@@ -32,6 +32,7 @@ class EarthEyeViewController: NasAPPViewController, EarthImageDelegate {
     }
         
     @objc func goButtonPressed() {
+        locationTextField.endEditing(true)
         guard let text = locationTextField.text, text != "" else {
             let alert = UIAlertController(title: "Missing required info!", message: "Location name can't be empty", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
