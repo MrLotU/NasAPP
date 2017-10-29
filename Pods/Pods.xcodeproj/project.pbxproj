@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -125,13 +125,13 @@
 		0236952E3931A4E647E8772B19166359 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
 		0C017BBEED3F64DAE52196F4D704750C /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
 		0F90CF0A0119410600F9E3DEBE218714 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		108B0BBDF1F3ABCBE1E25EC8712380F5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		108B0BBDF1F3ABCBE1E25EC8712380F5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		1218F6E60AA5DE3BB5E17FE095A1D2FA /* NasAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NasAPI.swift; path = NasAPI/Classes/NasAPI.swift; sourceTree = "<group>"; };
 		14DA710D299304D6ECC9AED3E6F53B45 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		162206A4F2B6DD5F8AED1C84514C56C1 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		1960AACA0D0D93DDEABB5CC888837E6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9FDB7A729A9611C67694866B5A75B7 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C4E43A0289DD5C956A8A2DDC00BE31C /* Pods_NasAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NasAPPTests.framework; path = "Pods-NasAPPTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4E43A0289DD5C956A8A2DDC00BE31C /* Pods_NasAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasAPPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3B97ED70291DC841DC999BBAEDEA11 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC6DB552FFB39273BAD8BF6F3B556BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD7F6C42891B80A3D0018CD7CCA3672 /* Pods-NasAPP-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NasAPP-resources.sh"; sourceTree = "<group>"; };
@@ -148,20 +148,20 @@
 		470777C78F3A3E9D318096B251755BC6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BBA9FD109636372617A7C0108DEAD0 /* Pods-NasAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPP.release.xcconfig"; sourceTree = "<group>"; };
 		4E42A7FCF0BCDBB6DD8C7BC56F96C6FB /* Pods-NasAPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPPTests.release.xcconfig"; sourceTree = "<group>"; };
-		50AABEBB65184BC7CBFA93326E15E649 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AABEBB65184BC7CBFA93326E15E649 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BCCB2A88DE8CE0442A170A9264EF07 /* Pods-NasAPP-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasAPP-acknowledgements.plist"; sourceTree = "<group>"; };
-		5BA69F9E6505ACD862B80BA0CADE8BA8 /* NasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NasAPI.framework; path = NasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C5EFA7DC483F9893B47929875847B0D /* NasAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NasAPI.modulemap; sourceTree = "<group>"; };
+		5BA69F9E6505ACD862B80BA0CADE8BA8 /* NasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5EFA7DC483F9893B47929875847B0D /* NasAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NasAPI.modulemap; sourceTree = "<group>"; };
 		5D4352BD1601810F0C01729F2E0AE211 /* Pods-NasAPPTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasAPPTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		635DA051F681FF33CF363751C9E2DE16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F6D86151D4078ADC9CF9FD4E6A8816 /* Pods-NasAPP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasAPP-dummy.m"; sourceTree = "<group>"; };
 		68ECCE3F8DA12D34F84462D91090D587 /* Pods-NasAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPP.debug.xcconfig"; sourceTree = "<group>"; };
-		6C4402C68DDC09302F0E7FF4B433413F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		6C4402C68DDC09302F0E7FF4B433413F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		6CEECB5AF2645320939E10044718E7ED /* Pods-NasAPPTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasAPPTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		70510539AEED6684A7C93B31E4F487BB /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		735002779D2DB0661E3C4247868E7006 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		75AB4A6478B74D221D2A9C007D422789 /* RoverImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoverImages.swift; path = NasAPI/Classes/RoverImages.swift; sourceTree = "<group>"; };
-		78730EBF1FC0FC7EAC3BA382D38AC64B /* Pods_NasAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NasAPP.framework; path = "Pods-NasAPP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78730EBF1FC0FC7EAC3BA382D38AC64B /* Pods_NasAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E4D7B7F9677A09CD761826768C15C3 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		7CEE8A2021A25AB1B139500F1C678D4E /* Pods-NasAPPTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasAPPTests-dummy.m"; sourceTree = "<group>"; };
 		83C94CF17F96EFAFABAED17327665B3C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -171,12 +171,12 @@
 		8A1791D2BCF23FB6965DB3512B73878D /* Pods-NasAPP-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasAPP-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8A5B447D72BC286545733BFCD6B4A23B /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		8B825E30F342EF2508236AC063BD18C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CE7302D5D3A4574C3F1296ED62E7892 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE7302D5D3A4574C3F1296ED62E7892 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922DB225DE39EE2190B285F0269C3538 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9467F647E0B67C7297F94A18E7E3C1C4 /* NasAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NasAPI.xcconfig; sourceTree = "<group>"; };
 		98F7B3E7FF3BB0B8335258F0C4023793 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		9982E33E027DEA999D7934B08CFB77F3 /* Pods-NasAPP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NasAPP.modulemap"; sourceTree = "<group>"; };
+		9982E33E027DEA999D7934B08CFB77F3 /* Pods-NasAPP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NasAPP.modulemap"; sourceTree = "<group>"; };
 		9F7762B100EDAE191245D88A421300C2 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
 		A3E7116E60528828E5AE60C48B1D1A30 /* Pods-NasAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A90A8C605B8D1BE1BB3CA9306BFB2EF8 /* Pods-NasAPPTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NasAPPTests-resources.sh"; sourceTree = "<group>"; };
@@ -191,15 +191,15 @@
 		C41FECDBD51EBF400E3A8893C7F23AC0 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		C808BD95A3E7A3F58FB428FC95207BF9 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
 		CA4DBFD69BEBCE4DBA95A28837901075 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		CEB387CD26C0146B402F822827A06023 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
+		CEB387CD26C0146B402F822827A06023 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		CF0F88092CCC1C4E550691539BA079C6 /* Pods-NasAPP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasAPP-umbrella.h"; sourceTree = "<group>"; };
 		D131BED079F6B3C8B92E74DF726143D3 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		D2DAD2B78144957A16EF79DBDECE1ABC /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
-		D8F060D9966007FF8CA2A8CA8161A09F /* Pods-NasAPPTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NasAPPTests.modulemap"; sourceTree = "<group>"; };
+		D8F060D9966007FF8CA2A8CA8161A09F /* Pods-NasAPPTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NasAPPTests.modulemap"; sourceTree = "<group>"; };
 		DE2AEF431EC23F36595055C6D7FCA341 /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
 		DE64CB05DD0102ACBF1AF15ABEE20B85 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		E0C107D91DB69481041B5BE4ECFBCD55 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
-		E85BC12F8444FB7296661AFBCFC456AD /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85BC12F8444FB7296661AFBCFC456AD /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C5CD9F6FED0E0E73EB5D60A343293 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		EB3555A66EA2EBBD118668FDF0222407 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		EB94935259AACB08EAE992C02EE9D7A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -289,7 +289,6 @@
 				75AB4A6478B74D221D2A9C007D422789 /* RoverImages.swift */,
 				00E179ABA238FA0BF47F5966BCB1D598 /* Support Files */,
 			);
-			name = NasAPI;
 			path = NasAPI;
 			sourceTree = "<group>";
 		};
@@ -338,7 +337,6 @@
 				79E4D7B7F9677A09CD761826768C15C3 /* UIImageView+AlamofireImage.swift */,
 				FFAAC8DF5BA9C8F17436233C4A5C5CCF /* Support Files */,
 			);
-			name = AlamofireImage;
 			path = AlamofireImage;
 			sourceTree = "<group>";
 		};
@@ -364,7 +362,6 @@
 				B8A3397D730CA1E4843A575E46E7CA48 /* Validation.swift */,
 				5FBA3E833128E84D8570B269726C188C /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -424,7 +421,6 @@
 				BCCB0FC7AFED3361D59ED66C4810B095 /* SwiftyJSON.swift */,
 				5116DAB061F3FA04718ED9ED9812EADB /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -659,7 +655,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -868,6 +864,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

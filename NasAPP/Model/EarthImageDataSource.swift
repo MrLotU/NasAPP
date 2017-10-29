@@ -62,7 +62,7 @@ extension EarthImageDataSource {
         self.imageView.image = nil
         self.activityIndicator.startAnimating()
         self.activityIndicator.isHidden = false
-        NasAPI.getImage(forLocation: loc, withCloudScore: true) { (image, error) in
+        NasAPI.getEarthImage(forLocation: loc, withCloudScore: true) { (image, error) in
             if let error = error {
                 self.delegate.showAlert(withTitle: "Networkign error!", andMessage: "Something went wrong while trying to get the image! Check your internet connection and try again")
                 print("Error: \(error)")
