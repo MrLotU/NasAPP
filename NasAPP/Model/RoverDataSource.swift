@@ -13,7 +13,7 @@ protocol ImagePickerDelegate: AlertDelegate {
     func didFinishPickingImage(image: UIImage)
 }
 
-class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
+class RoverDataSource: NSObject {
     
     fileprivate var images: [UIImage] = []
     let collectionView: UICollectionView
@@ -25,7 +25,11 @@ class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDel
         super.init()
         self.getImages()
     }
-    
+}
+
+// MARK: - Collection view setup
+
+extension RoverDataSource: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -54,6 +58,7 @@ class RoverDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDel
 //MARK: - Networking
 
 extension RoverDataSource {
+    /// Calls the NasAPI to get images from a specified rover
     func getImages() {
         NasAPI.getImages(forRoverWithName: "Curiosity", andSol: 1000, completion: { (images, error) in
             if let error = error {

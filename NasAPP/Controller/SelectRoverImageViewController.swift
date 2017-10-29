@@ -16,6 +16,7 @@ class SelectRoverImageViewController: NasAPPViewController, ImagePickerDelegate 
     var delegate: ImagePickerDelegate!
     var image: UIImage!
     
+    /// Data source for rovers
     lazy var roverDataSource: RoverDataSource = {
         return RoverDataSource(collectionView: self.collectionView, delegate: self)
     }()
@@ -29,6 +30,7 @@ class SelectRoverImageViewController: NasAPPViewController, ImagePickerDelegate 
         doneButton.addTarget(self, action: #selector(doneButtonPressed), for: .touchUpInside)
     }
     
+    /// Delegate method - sets image once one is selected
     func didFinishPickingImage(image: UIImage) {
         self.image = image
     }

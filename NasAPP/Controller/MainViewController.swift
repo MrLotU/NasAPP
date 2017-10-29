@@ -20,10 +20,12 @@ class MainViewController: NasAPPViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Animate launch screen to main screen transition
         launchImageView.image = UIImage(named: "LaunchScreen")
         UIView.animate(withDuration: 1) {
             self.launchImageView.alpha = 0
         }
+        // Basic view setup
         roverButton.imageView?.contentMode = .scaleAspectFill
         eyeButton.imageView?.contentMode = .scaleAspectFill
         asteroidButton.imageView?.contentMode = .scaleAspectFill

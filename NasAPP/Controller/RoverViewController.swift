@@ -26,6 +26,7 @@ class RoverViewController: NasAPPViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: Drag and drop
         let dragInteraction = UIDragInteraction(delegate: self)
         postcardTextField.addInteraction(dragInteraction)
         postcardTextField.isUserInteractionEnabled = true
@@ -37,6 +38,7 @@ class RoverViewController: NasAPPViewController {
         postcardView.addInteraction(dropInteraction)
         postcardView.clipsToBounds = true
 
+        // MARK: Button setup
         homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
         addTextButton.addTarget(self, action: #selector(pressedAddTextButton), for: .touchUpInside)
         removeTextButton.addTarget(self, action: #selector(pressedRemoveTextButton), for: .touchUpInside)
@@ -51,11 +53,13 @@ class RoverViewController: NasAPPViewController {
 // MARK: - Sending
 extension RoverViewController: MFMailComposeViewControllerDelegate {
     @objc func send() {
+        //Create the image that we're going to send from the view
         let image = UIImage(view: self.postcardView)
         guard let pngImage = UIImagePNGRepresentation(image) else {
             self.showAlert(withTitle: "Image error!", andMessage: "Something went wrong while trying to create the postcard! Try again later!")
             return
         }
+        // Create the email
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
@@ -64,17 +68,20 @@ extension RoverViewController: MFMailComposeViewControllerDelegate {
             
             present(mail, animated: true)
         } else {
+            // Show alert if email is not set up correctly
             self.showAlert(withTitle: "Mail error!", andMessage: "Something went wrong while trying to create the email! Make sure your email is set up and try again!")
             print("Can't send mail")
         }
     }
     
+    // Dismiss the mail controller once done
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
     }
 }
 
 extension UIImage {
+    /// Creates an image from the contents of a UIView
     convenience init(view: UIView) {
         UIGraphicsBeginImageContext(view.frame.size)
         view.layer.render(in:UIGraphicsGetCurrentContext()!)
@@ -86,10 +93,12 @@ extension UIImage {
 
 // MARK: - Image Picking
 extension RoverViewController: ImagePickerDelegate {
+    /// Sets image once one is picked
     func didFinishPickingImage(image: UIImage) {
         self.postcardImageView.image = image
     }
     
+    /// Starts image selection process
     @objc func selectImage() {
         self.performSegue(withIdentifier: "pickRoverImage", sender: nil)
     }
@@ -105,6 +114,9 @@ extension RoverViewController: ImagePickerDelegate {
 
 // MARK: - Drag and Drop
 extension RoverViewController: UIDragInteractionDelegate, UIDropInteractionDelegate {
+    /*
+     Add drag and drop implementation for the TextField
+    */
     func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
         guard let text = postcardTextField.text else { return [] }
         
@@ -131,6 +143,13 @@ extension RoverViewController: UIDragInteractionDelegate, UIDropInteractionDeleg
 
 // MARK: - Text editing
 extension RoverViewController: UITextFieldDelegate {
+    /*
+     Text field functionalities:
+     - Change text to `Click to edit` when empty
+     - Resize textfield to fit text
+     - Change textcolor from black to white and vice versa on button press
+     - Show/hide add/remove text on button press
+    */
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
             textField.text = "Click to edit"

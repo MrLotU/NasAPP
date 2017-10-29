@@ -9,8 +9,6 @@
 import UIKit
 import CoreLocation
 
-typealias getLocationCompletion = (CLLocation?) -> Void
-
 class EarthEyeViewController: NasAPPViewController, EarthImageDelegate {
 
     @IBOutlet weak var homeButton: UIButton!
@@ -20,6 +18,7 @@ class EarthEyeViewController: NasAPPViewController, EarthImageDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    /// Data source for the earth image
     lazy var earthImageDataSource: EarthImageDataSource = {
         return EarthImageDataSource(activityIndicator: self.activityIndicator, imageView: self.earthImageView, label: self.descriptionLabel, delegate: self)
     }()
@@ -30,7 +29,8 @@ class EarthEyeViewController: NasAPPViewController, EarthImageDelegate {
         homeButton.addTarget(self, action: #selector(didPressHomeButton), for: .touchUpInside)
         goButton.addTarget(self, action: #selector(goButtonPressed), for: .touchUpInside)
     }
-        
+    
+    /// Tells the DataSource an image is requested
     @objc func goButtonPressed() {
         locationTextField.endEditing(true)
         guard let text = locationTextField.text, text != "" else {

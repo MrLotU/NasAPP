@@ -14,6 +14,7 @@ class AsteroidsViewController: NasAPPViewController, AsteroidDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    /// Datasource for the asteroids
     lazy var dataSource: AsteroidDataSource = {
         return AsteroidDataSource(scrollView: self.scrollView, pageControl: self.pageControl, delegate: self)
     }()
@@ -25,6 +26,7 @@ class AsteroidsViewController: NasAPPViewController, AsteroidDelegate {
         dataSource.setup()
     }
 
+    /// Opens an URL in the default web browser
     func open(url: String) {
         UIApplication.shared.open(URL(string: url)!, options: [:])
     }

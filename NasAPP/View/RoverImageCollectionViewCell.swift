@@ -11,6 +11,7 @@ import UIKit
 class RoverImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var roverImageView: UIImageView!
     
+    /// Image to be displayedd in the image view
     var image: UIImage? {
         didSet {
             roverImageView.image = image

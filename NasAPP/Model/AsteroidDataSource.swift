@@ -30,6 +30,8 @@ class AsteroidDataSource: NSObject {
     }
 }
 
+// MARK: - Scrollview setup
+
 extension AsteroidDataSource: UIScrollViewDelegate {
     private func setupScrollView() {
         scrollView.contentSize = CGSize(width: scrollView.frame.width * CGFloat(asteroids.count), height: scrollView.frame.height)
@@ -110,12 +112,14 @@ extension AsteroidDataSource: UIScrollViewDelegate {
         return view
     }
     
+    /// Tells the delegate to open the specified URL in a web browser
     @objc func learnMoreButtonPressed() {
         let pageWidth: CGFloat = scrollView.frame.width
         let currentPage: CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         delegate.open(url: asteroids[Int(currentPage)].jplUrl)
     }
 
+    /// Updates the page control
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageWidth: CGFloat = scrollView.frame.width
         let currentPage: CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
@@ -126,6 +130,7 @@ extension AsteroidDataSource: UIScrollViewDelegate {
 // MARK: - Networking
 
 extension AsteroidDataSource {
+    /// Calls the NasAPI to get asteroids for today
     func getAsteroids() {
         NasAPI.getAsteroidDataForToday(detailed: false) { (asteroids, error) in
             if let error = error {

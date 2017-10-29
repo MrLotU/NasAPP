@@ -10,6 +10,8 @@ import UIKit
 import CoreLocation
 import NasAPI
 
+typealias getLocationCompletion = (CLLocation?) -> Void
+
 protocol EarthImageDelegate: AlertDelegate {}
 
 class EarthImageDataSource: NSObject {
@@ -27,6 +29,7 @@ class EarthImageDataSource: NSObject {
         self.delegate = delegate
     }
     
+    /// Gets a location from a string
     func getLocation(fromString string: String) {
         self.locationName = string
         getLocation(fromString: string) { (location) in
@@ -40,6 +43,7 @@ class EarthImageDataSource: NSObject {
 // MARK: - GeoCoding
 
 extension EarthImageDataSource {
+    /// Geocodes a string into a CLLocation object
     private func getLocation(fromString locationString: String, completion: @escaping getLocationCompletion) {
         let geoCoder = CLGeocoder()
         geoCoder.geocodeAddressString(locationString) { (placemarks, error) in
@@ -58,6 +62,7 @@ extension EarthImageDataSource {
 // MARK: - Networking
 
 extension EarthImageDataSource {
+    /// Calls the NasAPI to get an EarthImage for a specified location
     private func getImage(forLocation loc: CLLocation) {
         self.imageView.image = nil
         self.activityIndicator.startAnimating()
